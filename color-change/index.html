@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Color Change</title>
+	<style>
+        .btn-color-change {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+        .btn-red {
+            background-color: red;
+        }
+        .btn-grey {
+            background-color: grey;
+        }
+        .btn-blue {
+            background-color: blue;
+        }
+        .btn-green {
+            background-color: green;
+        }
+		
+	</style>
+</head>
+<body>
+	<main>
+		<h1>Color Change</h1>
+        <div class="btn-container"> 
+        <button id="red" class="btn-color-change btn-red" type="button">Change background color</button>
+        <button id="grey" class="btn-color-change btn-grey" type="button">Change background color</button>
+        <button id="blue" class="btn-color-change btn-blue" type="button">Change background color</button>
+        <button id="green" class="btn-color-change btn-green" type="button">Change background color</button> 
+    </div>
+		
+		<p id="color-value" aria-live="polite">Current color: #f3f4f6</p>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
