@@ -59,14 +59,14 @@
 		<p class="intro">Enter your measurements to calculate your body mass index.</p>
 		<form id="bmi-form">
 			<label for="weight">Weight (kg)</label>
-			<input id="weight" name="weight" type="number" min="1" step="any" placeholder="e.g. 70" required>
+			<input id="weight" name="weight" type="number" >
 
 			<label for="height">Height (cm)</label>
-			<input id="height" name="height" type="number" min="1" step="any" placeholder="e.g. 175" required>
+			<input id="height" name="height" type="number" >
 
-			<button type="submit">Calculate BMI</button>
+			<button type="submit" id="calculate-btn">Calculate BMI</button>
 		</form>
-		<section id="result" class="result" aria-live="polite" hidden></section>
+		<section id="result" class="result"></section>
 		<p class="note">BMI is a general screening measure and is not a substitute for professional medical advice.</p>
 	</main>
 	<script src="script.js"></script>

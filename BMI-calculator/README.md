@@ -1,32 +1,9 @@
 # BMI Calculator
 
-A simple browser-based BMI calculator. Enter your weight in kilograms and height in centimeters to calculate your BMI.
+## Run locally
 
-## Run the app
+From the project directory, start a local server:
 
-Open `index.html` in a web browser. No installation or build step is required.
+    python3 -m http.server 8000
 
-## How it works
-
-The calculator converts height from centimeters to meters and calculates BMI using:
-
-```text
-BMI = weight (kg) / height (m)²
-```
-
-The result is displayed to two decimal places. Invalid or non-positive measurements produce a validation message.
-
-## Scripts
-
-Run the package's placeholder test script from this folder:
-
-```sh
-npm test
-```
-
-This currently prints `No tests configured`; automated tests have not been set up.
-
-## Files
-
-- `index.html` — calculator page and styles
-- `script.js` — BMI calculation and input validation
+Then open http://localhost:8000 in your browser. Press Ctrl+C to stop the server.
