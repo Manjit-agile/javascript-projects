@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>API Requests</title>    
+    </head>
+    <body>
+        <section class="card-cn">
+                <div class="card-wrp">
+                    <div class="avatar">
+                        
+                    </div>
+                    <div class="name">
+
+
+                    </div>
+                    <div class="email"></div>
+                </div>
+
+        </section>
+
+        <script>
+        
+            const requestUrl = "https://randomuser.me/api/" 
+            const xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function(){
+
+                
+                console.log(xhr.readyState) 
+                if(xhr.readyState === 4){
+
+                    const data = JSON.parse(this.responseText)
+                    console.log(data)
+                    const user = data.results[0]
+                    const name = document.querySelector(".name")
+                    const avatar = document.querySelector(".avatar")
+                    const emailId = document.querySelector(".email")
+                    
+                    name.textContent = `${user.name.first} ${user.name.last}`;
+                    avatar.innerHTML = `<img src="${user.picture.medium}" alt="">`;
+                    emailId.textContent = `${user.email}`;
+                }
+            }
+            xhr.open(`Get`, requestUrl)
+
+            xhr.send()
+
+        
+            
+
+        </script>
+
+
+    </body>
+</html>
