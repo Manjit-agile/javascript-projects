@@ -15,3 +15,19 @@
 //     console.error("Could not fetch a random user:", error.message)
 //     process.exitCode = 1
 // })
+
+
+// const numbers = [12, 45, 7, 89, 23, 56, 39, 99];
+// let largetNum = numbers[0];
+// for(let i = 1; i <= numbers.length; i++){
+//     if(numbers[i] > largetNum){
+//         largetNum = numbers[i]
+//     }
+
+// }
+// console.log(largetNum);
+
+// const lg = Math.max(...numbers)
+// console.log(lg)
+
+
